@@ -1,0 +1,143 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.icon{
+    width: 13vw;
+    height: 13vw;
+}
+.IconHolder{
+    width: 20vw;
+    height: 20vw;
+    border-radius: 175px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: solid 0.2rem red;
+}
+.RButton{
+    width: 125px;
+    height: 125px;
+    border-radius: 16px;
+}
+.RButtonR{ 
+    background-image: url(/icons/rock.png);
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+.RButtonP{
+    background-image: url(/icons/paper.png);
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+.RButtonS{
+    background-image: url(/icons/scissors.png);
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+.RButton img{
+    width: 70%;
+    height: 70%;
+}
+.rps_container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 65vh;
+}
+.rps_vs{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    width: 15vw;
+    height: 15vw;
+}
+
+.rps_vs img{
+    width: 5vw;
+    height: 5vw;
+}
+.rps_resultc{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 15vh;
+    width: 100vw;
+}
+.rps_result img{
+    height: 25vh;
+}
+.rps-buttonc{
+    display: flex;
+    column-gap: 5rem;
+    height: 20vh;
+    justify-content: center;
+    align-items: center;
+}
+.RSButton{
+    width: 5vw;
+    height: 10vh;
+    background-image: url(/imgs/gear.png);
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    margin-right: 1vw;
+    border-radius: 16px;
+}
+.rps-settings{
+    width: 100vw;
+    height: 10vh;
+    margin-top: -12vh;
+    display: flex;
+    flex-direction: row-reverse;
+}
+.rps-game{
+    margin-top: -100vh;
+    z-index: 1;
+}
+.rps-settings-page{
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    width: 60vw;
+    height: 50vh;
+    background-color: rgb(39, 68, 122);
+    border-radius: 16px;
+    border: solid 0.2rem darkblue;
+}
+.rps-settings-page p{
+    font-size: 1.8rem;
+    color: white;   
+    text-align: center;
+}
+.rps-p{
+    border-bottom: 0.2rem solid rgba(33, 134, 167, 0.41);
+}
+.rps-n{
+    visibility: hidden;
+}
+.rps-settings-c{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+}
+.rps-utils{
+    display: flex;
+    flex-direction: row;
+    column-gap: 1rem   ;
+    margin-left: 1rem;
+}
+.rps-sound{
+    margin-top: 5px;
+    width: 75px;
+    height: 75px;
+    border: solid 0.2rem black;
+    border-radius: 16px;
+}

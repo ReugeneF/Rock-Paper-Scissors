@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <main>
+      <section class="rps-settings-c">  
+      <div class="rps-settings-page">
+        <section> <p class="rps-p"> Utilities </p></section>
+        <section class="rps-utils"> <div id="rps-sound" class="rps-sound"></div> <div id="rps-sound" class="rps-sound"> </div> </section>
+        <section> <p class="rps-p"> Themes </p></section>
+        <section class="rps-themes"> </section>
+        <section> <p class="rps-n"> oke </p></section>
+        <section class="rps-close"> <div id="rps-sound3" class="rps-sound"> </div></section>
+      </div>
+      </section>
+      <div class="rps-game">
+        <section class="rps_resultc">
+          <div class="rps_result">
+            <img class="stats" id="result" src="/imgs/Blank.png" alt="choice" />
+          </div>
+        </section>
+        <section class="rps_container">
+          <section>
+            <div class="IconHolder">
+              <img
+                class="icon pc"
+                id="computer-choice"
+                src="/icons/robot.png"
+                alt="answer"
+              />
+            </div>
+            <p class="RGame_p">Computer</p>
+          </section>
+          <section class="rps_vs"><img src="/imgs/vs.png" alt="vs" /></section>
+          <section>
+            <div class="IconHolder">
+              <img
+                class="icon pl"
+                id="player-choice"
+                src="/icons/question-mark.png"
+                alt="choice"
+              />
+            </div>
+            <p class="RGame_P">Player</p>
+          </section>
+        </section>
+
+        <section class="rps-buttonc">
+          <button class="RButton RButtonR" id="rock" onclick="pic1()"></button>
+          <button class="RButton RButtonP" id="paper" onclick="pic2()"></button>
+          <button
+            class="RButton RButtonS"
+            id="scissors"
+            onclick="pic3()"
+          ></button>
+        </section>
+        <section class="rps-settings">
+          <div class="RSButton" id="rpsettings" onclick="opensettings()"></div>
+        </section>
+      </div>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>
