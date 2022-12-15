@@ -80,21 +80,31 @@
     align-items: center;
 }
 .RSButton{
-    width: 5vw;
-    height: 10vh;
+    width: 75px;
+    height: 75px;
     background-image: url(/imgs/gear.png);
     background-size: 80%;
     background-repeat: no-repeat;
     background-position: 50% 50%;
-    margin-right: 1vw;
     border-radius: 16px;
+    transition: 2s;
+    margin-left: 3vw;
+    margin-right: 3vw;
 }
+.RSButton:hover{
+    transform: rotate(75deg);
+    transition: 2s;
+}
+
 .rps-settings{
+    overflow-x: hidden;
+    overflow-y: hidden;
     width: 100vw;
     height: 10vh;
     margin-top: -12vh;
     display: flex;
     flex-direction: row-reverse;
+
 }
 .rps-game{
     margin-top: -100vh;
@@ -103,6 +113,16 @@
 .rps-settings-page{
     z-index: 2;
     display: flex;
+    flex-direction: column;
+    width: 60vw;
+    height: 50vh;
+    background-color: rgb(39, 68, 122);
+    border-radius: 16px;
+    border: solid 0.2rem darkblue;
+}
+.rps-settings-pageC{
+    z-index: 2;
+    display: none;
     flex-direction: column;
     width: 60vw;
     height: 50vh;
@@ -134,10 +154,24 @@
     column-gap: 1rem   ;
     margin-left: 1rem;
 }
-.rps-sound{
+.rps-buttonU{
     margin-top: 5px;
-    width: 75px;
-    height: 75px;
+    width: 100px;
+    height: 100px;
     border: solid 0.2rem black;
     border-radius: 16px;
+}
+/* Buttons utilities */
+.rps-sound{
+ 
+}
+.rps-dmode{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1e1e1e; 
+}
+.rps-dmode img{
+  width: 80%;
+
 }

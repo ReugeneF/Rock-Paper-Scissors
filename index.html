@@ -9,16 +9,20 @@
   </head>
   <body>
     <main>
-      <section class="rps-settings-c">  
-      <div class="rps-settings-page">
-        <section> <p class="rps-p"> Utilities </p></section>
-        <section class="rps-utils"> <div id="rps-sound" class="rps-sound"></div> <div id="rps-sound" class="rps-sound"> </div> </section>
-        <section> <p class="rps-p"> Themes </p></section>
-        <section class="rps-themes"> </section>
-        <section> <p class="rps-n"> oke </p></section>
-        <section class="rps-close"> <div id="rps-sound3" class="rps-sound"> </div></section>
-      </div>
+      <section class="rps-settings-c">
+        <div class="rps-settings-page" id="rps-settings">
+          <section><p class="rps-p">Utilities</p></section>
+          <section class="rps-utils">
+            <div id="rps-sound" class="rps-buttonU rps-sound"></div>
+            <div id="lightmode" class="rps-buttonU rps-dmode">
+                <img id="darkmode" src="/icons/sun.png" alt="mode">
+            </div>
+          </section>
+          <section><p class="rps-p">Themes</p></section>
+          <section class="rps-themes"></section>
+        </div>
       </section>
+
       <div class="rps-game">
         <section class="rps_resultc">
           <div class="rps_result">
@@ -61,7 +65,7 @@
           ></button>
         </section>
         <section class="rps-settings">
-          <div class="RSButton" id="rpsettings" onclick="opensettings()"></div>
+          <div class="RSButton" id="rpsettings"></div>
         </section>
       </div>
     </main>
