@@ -1,6 +1,7 @@
 const computerChoice = document.getElementById('computer-choice');
 const playerChoice = document.getElementById('player-choice');
 const resultOutput = document.getElementById('result');
+const buttons = document.getElementsByClassName('RButton')
 
 let possibleChoices = document.querySelectorAll('button');
 let styling = document.getElementById('rpsstylethis')
@@ -83,6 +84,7 @@ settingsB.addEventListener("click", function opensettings(){
 let dmodeA = document.getElementById('lmode');
 let dmodeB = document.getElementById('darkmode');
 let dmodeC = document.getElementById('lightmode');
+let changeThis = document.getElementsByName('classnamejs').className
 
 dmodeB.addEventListener("click", function darkmode(){
     if(dmodeB.style.display = "block"){
@@ -93,7 +95,6 @@ dmodeB.addEventListener("click", function darkmode(){
         styling.style.borderColor = "red";
         styling2.style.borderColor = "red";
         document.body.style.backgroundColor = "#2d2d30";
-        possibleChoices.style.display = "none"
     } 
 })
 dmodeA.addEventListener("click", function lmode(){
@@ -112,25 +113,29 @@ dmodeA.addEventListener("click", function lmode(){
 let rpsSound = document.getElementById('sound')
 let rpsMute = document.getElementById('mute')
 let rpsButton = document.getElementById('rpssound')
+let mutethis = document.getElementById('fsound')
 
-rpsSound.addEventListener("click", function darkmode(){
+rpsSound.addEventListener("click", function mute(){
     if(rpsSound.style.display = "block"){
         rpsMute.style.display = "block"
         rpsSound.style.display = "none"
         rpsButton.style.backgroundColor = "#2e2e2e"
         rpsButton.style.border = "0.2rem solid black"
+        mutethis.src = "none"
         
     } 
 })
-rpsMute.addEventListener("click", function lmode(){
+rpsMute.addEventListener("click", function unmute(){
     if(rpsMute.style.display = "block"){
         rpsMute.style.display = "none"
         rpsSound.style.display = "block"
         rpsButton.style.backgroundColor = "#6e6e6e"
         rpsButton.style.border = "0.2rem solid white"
-        
+        mutethis.src = "/Tobu - Sweet Story (128 kbps).mp3"
     } 
 })
+
+// Themes
 
 
 

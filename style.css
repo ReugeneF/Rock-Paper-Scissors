@@ -5,8 +5,8 @@
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap');
-.mainbody{
-    background-color: black;
+.rps-color{
+    background-color: lightgrey;
 }
 .icon{
     width: 13vw;
@@ -30,6 +30,15 @@
     width: 125px;
     height: 125px;
     border-radius: 16px;
+    background-color: rgb(235, 235, 235);
+    border: solid 0.15rem black;
+}
+.RButton2{
+    width: 125px;
+    height: 125px;
+    border-radius: 16px;
+    background-color: #4e4e4e;
+    border: solid 0.15rem red;
 }
 .RButtonR{ 
     background-image: url(/icons/rock.png);

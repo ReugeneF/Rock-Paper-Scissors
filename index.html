@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap" rel="stylesheet">
     <title>Document</title>
   </head>
-  <body>
+  <body class="rps-color">
     <main id="rpsbody mainbody">
       
       <section class="rps-settings-c">
@@ -19,13 +19,15 @@
               <img id="sound" src="/icons/sound.png" alt="sound" class="rps-sound">
               <img id="mute" src="/icons/mute.png" alt="mute" class="rps-mute">
             </div>
-            <div id="lightmode" class="rps-buttonU rps-dmode">
-                <img id="darkmode" src="/icons/sun.png" alt="mode" class="rps-sun">
-                <img id="lmode" src="/icons/moon.png" alt="mod" class="rps-moon">
-            </div>
+            
           </section>
           <section><p class="rps-p">Themes</p></section>
-          <section class="rps-themes"></section>
+          <section class="rps-utils"> 
+            <div id="lightmode" class="rps-buttonU rps-dmode">
+              <img id="darkmode" src="/icons/sun.png" alt="mode" class="rps-sun">
+              <img id="lmode" src="/icons/moon.png" alt="mod" class="rps-moon">
+          </div>
+          </section>
         </div>
       </section>
 
@@ -62,10 +64,10 @@
         </section>
 
         <section class="rps-buttonc">
-          <button class="RButton RButtonR" id="rock" onclick="pic1()"></button>
-          <button class="RButton RButtonP" id="paper" onclick="pic2()"></button>
+          <button class="RButton RButtonR classnamejs" id="rock" onclick="pic1()"></button>
+          <button class="RButton RButtonP classnamejs" id="paper" onclick="pic2()"></button>
           <button
-            class="RButton RButtonS"
+            class="RButton RButtonS classnamejs"
             id="scissors"
             onclick="pic3()"
           ></button>
@@ -76,7 +78,7 @@
       </div>
     </main>
     <!-- Audio -->
-      <!-- <embed name="GoodEnough" src="/Tobu - Sweet Story (128 kbps).mp3" loop="false" hidden="true" autostart="true" id="rps-sound" > -->
+      <embed id="fsound" name="GoodEnough" src="/Tobu - Sweet Story (128 kbps).mp3" loop="false" hidden="true" autostart="true" id="rps-sound" >
     <script src="app.js"></script>
   </body>
 </html>
