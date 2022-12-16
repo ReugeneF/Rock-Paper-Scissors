@@ -2,8 +2,10 @@ const computerChoice = document.getElementById('computer-choice');
 const playerChoice = document.getElementById('player-choice');
 const resultOutput = document.getElementById('result');
 
-const possibleChoices = document.querySelectorAll('button');
-
+let possibleChoices = document.querySelectorAll('button');
+let styling = document.getElementById('rpsstylethis')
+let styling2 = document.getElementById('rpsstylethis2')
+let body = document.getElementById('rpsobody')
 let player;
 let computer;
 let result;
@@ -78,20 +80,57 @@ settingsB.addEventListener("click", function opensettings(){
 }
     }) 
 //Opening and closing the settings page
- 
-const dmodeB = document.getElementById('darkmode');
-const dmodeC = document.getElementById('lightmode')
+let dmodeA = document.getElementById('lmode');
+let dmodeB = document.getElementById('darkmode');
+let dmodeC = document.getElementById('lightmode');
 
 dmodeB.addEventListener("click", function darkmode(){
-    if(dmodeC.style.backgroundColor = "#3c3c3c"){
-        // dmodeB.src = "/icons/moon.png";
-        dmodeC.style.backgroundColor = "#1e1e1e";
-        console.log("oke");
-    }
-    if(dmodeC.style.backgroundColor = "#1e1e1e"){
-        // dmodeB.src = "/icons/sun.png";
-        dmodeC.style.backgroundColor = "#3c3c3c";
-        
-    }
+    if(dmodeB.style.display = "block"){
+        dmodeA.style.display = "block";
+        dmodeB.style.display = "none";
+        dmodeC.style.backgroundColor = "#2e2e2e";
+        dmodeC.style.border = "0.2rem solid black";
+        styling.style.borderColor = "red";
+        styling2.style.borderColor = "red";
+        document.body.style.backgroundColor = "#2d2d30";
+        possibleChoices.style.display = "none"
+    } 
 })
+dmodeA.addEventListener("click", function lmode(){
+    if(dmodeA.style.display = "block"){
+        dmodeA.style.display = "none";
+        dmodeB.style.display = "block";
+        dmodeC.style.backgroundColor = "#6e6e6e";
+        dmodeC.style.border = "0.2rem solid white";
+        styling.style.borderColor = "black";
+        styling2.style.borderColor = "black";
+        document.body.style.backgroundColor = "lightgrey";
+    } 
+})
+
+//volume
+let rpsSound = document.getElementById('sound')
+let rpsMute = document.getElementById('mute')
+let rpsButton = document.getElementById('rpssound')
+
+rpsSound.addEventListener("click", function darkmode(){
+    if(rpsSound.style.display = "block"){
+        rpsMute.style.display = "block"
+        rpsSound.style.display = "none"
+        rpsButton.style.backgroundColor = "#2e2e2e"
+        rpsButton.style.border = "0.2rem solid black"
+        
+    } 
+})
+rpsMute.addEventListener("click", function lmode(){
+    if(rpsMute.style.display = "block"){
+        rpsMute.style.display = "none"
+        rpsSound.style.display = "block"
+        rpsButton.style.backgroundColor = "#6e6e6e"
+        rpsButton.style.border = "0.2rem solid white"
+        
+    } 
+})
+
+
 

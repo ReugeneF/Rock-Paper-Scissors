@@ -5,17 +5,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap" rel="stylesheet">
     <title>Document</title>
   </head>
   <body>
-    <main>
+    <main id="rpsbody mainbody">
+      
       <section class="rps-settings-c">
         <div class="rps-settings-page" id="rps-settings">
           <section><p class="rps-p">Utilities</p></section>
           <section class="rps-utils">
-            <div id="rps-sound" class="rps-buttonU rps-sound"></div>
+            <div id="rpssound" class="rps-buttonU rps-dmode">
+              <img id="sound" src="/icons/sound.png" alt="sound" class="rps-sound">
+              <img id="mute" src="/icons/mute.png" alt="mute" class="rps-mute">
+            </div>
             <div id="lightmode" class="rps-buttonU rps-dmode">
-                <img id="darkmode" src="/icons/sun.png" alt="mode">
+                <img id="darkmode" src="/icons/sun.png" alt="mode" class="rps-sun">
+                <img id="lmode" src="/icons/moon.png" alt="mod" class="rps-moon">
             </div>
           </section>
           <section><p class="rps-p">Themes</p></section>
@@ -31,7 +37,7 @@
         </section>
         <section class="rps_container">
           <section>
-            <div class="IconHolder">
+            <div class="IconHolder" id="rpsstylethis">
               <img
                 class="icon pc"
                 id="computer-choice"
@@ -43,7 +49,7 @@
           </section>
           <section class="rps_vs"><img src="/imgs/vs.png" alt="vs" /></section>
           <section>
-            <div class="IconHolder">
+            <div class="IconHolder" id="rpsstylethis2">
               <img
                 class="icon pl"
                 id="player-choice"
@@ -51,7 +57,7 @@
                 alt="choice"
               />
             </div>
-            <p class="RGame_P">Player</p>
+            <p class="RGame_p">Player</p>
           </section>
         </section>
 
@@ -69,6 +75,8 @@
         </section>
       </div>
     </main>
+    <!-- Audio -->
+      <!-- <embed name="GoodEnough" src="/Tobu - Sweet Story (128 kbps).mp3" loop="false" hidden="true" autostart="true" id="rps-sound" > -->
     <script src="app.js"></script>
   </body>
 </html>
